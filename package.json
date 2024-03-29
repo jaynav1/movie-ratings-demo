@@ -1,5 +1,5 @@
 {
-  "name": "my-next-project",
+  "name": "movie-ratings-demo",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,8 +11,10 @@
     "@chakra-ui/react": "^1.8.3",
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
+    "@visx/xychart": "^2.9.0",
     "framer-motion": "^6.2.6",
-    "next": "12.0.10",
+    "next": "^12.1.0",
+    "nextjs-progressbar": "^0.0.13",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },

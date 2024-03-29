@@ -5,7 +5,7 @@ export default function Poster (props) {
     return (
       <Box maxW='sm' width='212px' borderWidth='1px' borderRadius='lg' overflow='hidden'>
         <Link href={`/tv/${props.externals.imdb}`}>
-          <Image src={props.image.medium} alt={props.name} />
+          <Image src={props.image.medium} alt={props.name} width='210px' height='295px'/>
         </Link>
       </Box>
     )

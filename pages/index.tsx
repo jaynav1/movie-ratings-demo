@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link';
-import { Button, Input, Center, Stack, SimpleGrid, VStack, Spinner } from '@chakra-ui/react'
+import { Button, Input, Center, Stack, Wrap, VStack, Spinner } from '@chakra-ui/react'
 import { useState } from 'react'
 import Poster from '../components/Poster'
 
@@ -56,6 +56,7 @@ export default function Home() {
         
       </Center>
       <PosterGrid results={results} refreshing={refreshing}/>
+
       
     </div>
   )
@@ -69,7 +70,7 @@ function PosterGrid(props) {
   } else {
     if (results.length > 0) {
       return (
-        <SimpleGrid minChildWidth='212px' spacing='40px' p='40px'>{results.map((result) => (<Poster {...result}/>))}</SimpleGrid>
+        <Wrap spacing='20px' p='40px' >{results.map((result) => (<Poster {...result}/>))}</Wrap>
       )
     } else {
       return ( <Center><h1>No Results</h1></Center> )
